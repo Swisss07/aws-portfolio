@@ -4,101 +4,148 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Arun Kumar V · Cloud, Cinema &amp; Code</title>
-<meta name="description" content="Arun Kumar V, Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus. Cloud projects and digital media production.">
+<meta name="description" content="Arun Kumar V, Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;700&family=Noto+Sans+Malayalam:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Noto+Sans+Malayalam:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="grain" aria-hidden="true"></div>
+<div class="xp" aria-hidden="true"><div class="xp-fill" id="xp"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <div class="t-icon" aria-hidden="true"></div>
+  <div><b>Advancement Made!</b><span id="toast-text"></span></div>
+</div>
 
 <header class="top">
-  <a class="mark" href="#top">AK</a>
+  <a class="mc-btn" href="#top">AK</a>
   <nav aria-label="Primary">
-    <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#contact">Contact</a>
+    <a class="mc-btn" href="#about">About</a>
+    <a class="mc-btn" href="#skills">Skills</a>
+    <a class="mc-btn" href="#work">Projects</a>
+    <a class="mc-btn" href="#contact">Contact</a>
   </nav>
 </header>
 
 <main id="top">
-<section class="hero" id="hero">
-  <div class="spot" aria-hidden="true"></div>
-  <p class="slate">Integrated MCA · Amrita Vishwa Vidyapeetham, Mysuru</p>
-  <h1>
-    <span class="line">Arun</span>
-    <span class="line">Kumar <i>V</i></span>
-  </h1>
-  <p class="tag">I build on the cloud and tell stories on screen.</p>
-  <div class="actions">
-    <a class="btn solid" href="#work">See my work</a>
-    <a class="btn ghost" href="mailto:arunkumarvannadil2007@gmail.com">Say hello</a>
-  </div>
-  <div class="scroll" aria-hidden="true"><span></span></div>
-</section>
-
-<section class="sec" id="about">
-  <div class="wrap two">
-    <h2 class="reveal">A scientist’s curiosity, a filmmaker’s eye.</h2>
-    <div class="reveal">
-      <p class="big">I’m Arun Kumar V, an Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus.</p>
-      <p>My science background taught me to question, test and keep what works. I bring that to cloud environments, where I deploy and host on AWS, and to digital media, where I produce short films and regional cinema content.</p>
+<section class="hero">
+  <div class="sun" aria-hidden="true"></div>
+  <div class="cloud c1" aria-hidden="true"></div>
+  <div class="cloud c2" aria-hidden="true"></div>
+  <div class="cloud c3" aria-hidden="true"></div>
+  <div class="hero-text">
+    <div class="avatar-wrap">
+      <span class="nametag">Arun</span>
+      <div class="avatar" id="avatar">
+        <svg viewBox="0 0 8 8" shape-rendering="crispEdges" role="img" aria-label="Pixel avatar of Arun">
+          <rect width="8" height="8" fill="#c68642"/>
+          <rect width="8" height="2" fill="#1c1417"/>
+          <rect y="2" width="1" height="1" fill="#1c1417"/>
+          <rect x="7" y="2" width="1" height="1" fill="#1c1417"/>
+          <rect x="1" y="3" width="1" height="1" fill="#fff"/>
+          <rect x="6" y="3" width="1" height="1" fill="#fff"/>
+          <rect x="2" y="3" width="1" height="1" fill="#2d6a4f"/>
+          <rect x="5" y="3" width="1" height="1" fill="#2d6a4f"/>
+          <rect x="3" y="5" width="2" height="1" fill="#a86a32"/>
+          <rect x="1" y="6" width="1" height="1" fill="#7a3b1e"/>
+          <rect x="6" y="6" width="1" height="1" fill="#7a3b1e"/>
+          <rect x="2" y="7" width="4" height="1" fill="#7a3b1e"/>
+        </svg>
+      </div>
+    </div>
+    <p class="chat">&lt;Arun&gt; Welcome to my world.</p>
+    <h1>ARUN<br>KUMAR V</h1>
+    <p class="sub">Integrated MCA student · Cloud builder · Digital storyteller</p>
+    <div class="row">
+      <a class="mc-btn big" href="#work">View Projects</a>
+      <a class="mc-btn big" href="mailto:arunkumarvannadil2007@gmail.com">Contact Me</a>
     </div>
   </div>
-  <div class="wrap lenses">
-    <article class="lens reveal"><b>01</b><h3>Science</h3><p>A strong foundation that shapes how I solve problems.</p></article>
-    <article class="lens reveal"><b>02</b><h3>Cloud</h3><p>Comfortable in AWS environments, from Amplify to EC2.</p></article>
-    <article class="lens reveal"><b>03</b><h3>Cinema</h3><p>Digital media and short film production with a story-first mindset.</p></article>
-  </div>
+  <div class="ground" aria-hidden="true"><div class="grass"></div><div class="dirt"></div></div>
 </section>
 
-<section class="sec" id="skills">
-  <div class="wrap"><h2 class="reveal">Tech superpowers</h2></div>
-  <div class="marquee" aria-hidden="true">
-    <div class="track">
-      <span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span><span>AWS Amplify</span><span>EC2</span><span>Git</span><span>VS Code</span>
-      <span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span><span>AWS Amplify</span><span>EC2</span><span>Git</span><span>VS Code</span>
+<section class="sec" id="about" data-adv="Meet the Player">
+  <div class="wrap">
+    <h2>Player Stats</h2>
+    <div class="panel two">
+      <div>
+        <p class="big">I’m Arun Kumar V, an Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus.</p>
+        <p>A strong science background taught me to experiment, observe and improve. I bring that mindset to cloud environments on AWS and to digital media production, from short films to regional cinema updates.</p>
+      </div>
+      <dl class="stats">
+        <div><dt>Class</dt><dd>Integrated MCA</dd></div>
+        <div><dt>Spawn point</dt><dd>Amrita Vishwa Vidyapeetham, Mysuru</dd></div>
+        <div><dt>Biome</dt><dd>Science background</dd></div>
+        <div><dt>Crafting</dt><dd>Cloud · Digital media</dd></div>
+      </dl>
     </div>
   </div>
-  <ul class="wrap badges reveal" aria-label="Skills">
-    <li>C</li><li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li><li>AWS Amplify</li><li>EC2</li><li>Git</li><li>VS Code</li>
-  </ul>
 </section>
 
-<section class="sec" id="work">
+<section class="sec" id="skills" data-adv="Tech Superpowers Unlocked">
   <div class="wrap">
-    <h2 class="reveal">Projects &amp; achievements</h2>
-    <p class="lead reveal">Three frames from what I’ve made so far.</p>
-  </div>
-  <div class="strip">
-    <article class="frame reveal">
-      <small>Scene 1</small>
-      <h3>Cloud-hosted resume &amp; portfolio</h3>
-      <p>My resume and portfolio deployed on AWS, always online and easy to update.</p>
-      <ul><li>AWS Amplify &amp; EC2</li><li>Versioned with Git</li></ul>
-    </article>
-    <article class="frame reveal">
-      <small>Scene 2</small>
-      <h3>Short film &amp; digital media production</h3>
-      <p>Turning ideas into short films and polished content for digital platforms.</p>
-      <ul><li>Production &amp; storytelling</li><li>Content for online audiences</li></ul>
-    </article>
-    <article class="frame reveal">
-      <small>Scene 3</small>
-      <h3>ചിത്രലോക <span>cinema updates</span></h3>
-      <p>Regional cinema updates that keep Malayalam film audiences informed.</p>
-      <ul><li>Regional cinema coverage</li><li>Audience-focused publishing</li></ul>
-    </article>
+    <h2>Tech Superpowers</h2>
+    <p class="lead">Select a slot, or press 1 to 9.</p>
+    <p class="item-name" id="item-name" aria-live="polite">C</p>
+    <div class="hotbar" id="hotbar" role="listbox" aria-label="Skills hotbar">
+      <button class="slot" role="option" data-name="C" style="--c:#5b8def"><span>C</span></button>
+      <button class="slot" role="option" data-name="C++" style="--c:#7b61ff"><span>C++</span></button>
+      <button class="slot" role="option" data-name="Java" style="--c:#e8743b"><span>JAVA</span></button>
+      <button class="slot" role="option" data-name="Python" style="--c:#f2c94c"><span>PY</span></button>
+      <button class="slot" role="option" data-name="JavaScript" style="--c:#f7df1e"><span>JS</span></button>
+      <button class="slot" role="option" data-name="AWS Amplify" style="--c:#ff9900"><span>AMP</span></button>
+      <button class="slot" role="option" data-name="AWS EC2" style="--c:#ec7211"><span>EC2</span></button>
+      <button class="slot" role="option" data-name="Git" style="--c:#f05133"><span>GIT</span></button>
+      <button class="slot" role="option" data-name="VS Code" style="--c:#2d9cdb"><span>VSC</span></button>
+    </div>
+    <ul class="skill-list">
+      <li>C</li><li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li><li>AWS Amplify</li><li>EC2</li><li>Git</li><li>VS Code</li>
+    </ul>
   </div>
 </section>
 
-<section class="sec contact" id="contact">
+<section class="sec" id="work" data-adv="Quest Log Opened">
   <div class="wrap">
-    <p class="slate">Open to internships &amp; collaborations</p>
-    <h2 class="reveal">Let’s make something worth watching.</h2>
-    <a class="mail" id="mail" href="mailto:arunkumarvannadil2007@gmail.com">arunkumarvannadil2007@gmail.com</a>
-    <div class="actions">
-      <a class="btn solid" href="mailto:arunkumarvannadil2007@gmail.com">Send an email</a>
-      <button class="btn ghost" id="copy" type="button">Copy address</button>
+    <h2>Projects &amp; Achievements</h2>
+    <div class="adv-grid">
+      <article class="adv">
+        <div class="adv-icon cloud-i" aria-hidden="true"></div>
+        <div>
+          <h3>Cloud-Hosted Resume &amp; Portfolio</h3>
+          <p>My resume and portfolio deployed on AWS, always online and easy to update.</p>
+          <small>AWS Amplify · EC2 · Git</small>
+        </div>
+      </article>
+      <article class="adv">
+        <div class="adv-icon film-i" aria-hidden="true"></div>
+        <div>
+          <h3>Short Film &amp; Digital Media Production</h3>
+          <p>Turning ideas into short films and polished content for digital platforms.</p>
+          <small>Production · Storytelling</small>
+        </div>
+      </article>
+      <article class="adv">
+        <div class="adv-icon news-i" aria-hidden="true"></div>
+        <div>
+          <h3>ചിത്രലോക Cinema Updates</h3>
+          <p>Regional cinema updates that keep Malayalam film audiences informed.</p>
+          <small>Regional cinema · Publishing</small>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact" data-adv="Message Received">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="sign">
+      <p>Let’s build something together.</p>
+      <a class="mail" href="mailto:arunkumarvannadil2007@gmail.com">arunkumarvannadil2007@gmail.com</a>
+    </div>
+    <div class="row center">
+      <a class="mc-btn big" href="mailto:arunkumarvannadil2007@gmail.com">Send Email</a>
+      <button class="mc-btn big" id="copy" type="button">Copy Address</button>
     </div>
     <p class="note" id="note" role="status" aria-live="polite"></p>
   </div>
