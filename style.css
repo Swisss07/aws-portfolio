@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #f4f6f9;
+    --text-color: #333;
+    --card-bg: #fff;
+    --primary-color: #FF9900; /* AWS Orange */
+    --accent-color: #232F3E; /* AWS Dark Blue */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.creative-container {
+    margin-top: 15px;
+}
+
+.hint {
+    display: block;
+    font-size: 0.9rem;
+    color: #FF9900;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #e88b00;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.project-card {
+    background: rgba(0,0,0,0.02);
+    padding: 15px;
+    margin-top: 10px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+/* Retro Terminal Theme Classes (Triggered via JS) */
+body.terminal-theme {
+    --bg-color: #0d0208;
+    --text-color: #00ff66;
+    --card-bg: #1a030f;
+    --primary-color: #00ff66;
+    --accent-color: #ff0055;
+    font-family: 'Courier New', Courier, monospace;
+}
