@@ -1,81 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arun Kumar V - Cloud Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arun Kumar V · Cloud, Cinema &amp; Code</title>
+<meta name="description" content="Arun Kumar V, Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus. Cloud projects and digital media production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;700&family=Noto+Sans+Malayalam:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-glow"></div>
-    
-    <header>
-        <div class="hero-content">
-            <h1>Arun Kumar V</h1>
-            <p class="subtitle">Integrated MCA Student | Cloud & Full-Stack Developer</p>
-            
-            <!-- Creative Feature: Interactive Terminal CLI -->
-            <div class="creative-feature-box">
-                <span class="hint">⚡ Creative Feature: Try typing commands below (e.g., <code>skills</code>, <code>projects</code>, <code>clear</code>)</span>
-                
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="terminal-title">arun@aws-cloud:~</span>
-                    </div>
-                    <div id="terminal-output" class="terminal-output">
-                        Welcome to Arun's interactive CLI! Type <span class="highlight-cmd">help</span> to see available commands.
-                    </div>
-                    <div class="terminal-input-line">
-                        <span class="prompt">$</span>
-                        <input type="text" id="terminalInput" placeholder="Type a command here..." autocomplete="off">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<div class="grain" aria-hidden="true"></div>
 
-    <main>
-        <!-- Section 1: About Me -->
-        <section id="about" class="glass-card">
-            <h2>About Me</h2>
-            <p>Hi! I'm Arun Kumar V, an Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus. I combine a strong science background with hands-on expertise in cloud environments, web deployment, and digital media production.</p>
-        </section>
+<header class="top">
+  <a class="mark" href="#top">AK</a>
+  <nav aria-label="Primary">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#contact">Contact</a>
+  </nav>
+</header>
 
-        <!-- Section 2: Tech Superpowers -->
-        <section id="skills" class="glass-card">
-            <h2>Tech Superpowers</h2>
-            <div class="skills-grid">
-                <div class="skill-badge">C / C++</div>
-                <div class="skill-badge">Java</div>
-                <div class="skill-badge">Python</div>
-                <div class="skill-badge">JavaScript</div>
-                <div class="skill-badge">AWS EC2 & Amplify</div>
-                <div class="skill-badge">VS Code & Git</div>
-                <div class="skill-badge">Web & Cloud Architecture</div>
-            </div>
-        </section>
+<main id="top">
+<section class="hero" id="hero">
+  <div class="spot" aria-hidden="true"></div>
+  <p class="slate">Integrated MCA · Amrita Vishwa Vidyapeetham, Mysuru</p>
+  <h1>
+    <span class="line">Arun</span>
+    <span class="line">Kumar <i>V</i></span>
+  </h1>
+  <p class="tag">I build on the cloud and tell stories on screen.</p>
+  <div class="actions">
+    <a class="btn solid" href="#work">See my work</a>
+    <a class="btn ghost" href="mailto:arunkumarvannadil2007@gmail.com">Say hello</a>
+  </div>
+  <div class="scroll" aria-hidden="true"><span></span></div>
+</section>
 
-        <!-- Section 3: Projects & Achievements -->
-        <section id="projects" class="glass-card">
-            <h2>Projects & Achievements</h2>
-            <div class="project-card">
-                <h3>Cloud-Hosted Resume & Portfolio</h3>
-                <p>Designed and deployed a responsive resume and portfolio website hosted globally on AWS using AWS Amplify Hosting, coupled with Nginx/Apache configurations.</p>
-            </div>
-            <div class="project-card">
-                <h3>Digital Media & Short Film Production</h3>
-                <p>Active creator and administrator for regional cinema updates (ചിത്രലോക), combining technical development with creative storytelling.</p>
-            </div>
-        </section>
-    </main>
+<section class="sec" id="about">
+  <div class="wrap two">
+    <h2 class="reveal">A scientist’s curiosity, a filmmaker’s eye.</h2>
+    <div class="reveal">
+      <p class="big">I’m Arun Kumar V, an Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus.</p>
+      <p>My science background taught me to question, test and keep what works. I bring that to cloud environments, where I deploy and host on AWS, and to digital media, where I produce short films and regional cinema content.</p>
+    </div>
+  </div>
+  <div class="wrap lenses">
+    <article class="lens reveal"><b>01</b><h3>Science</h3><p>A strong foundation that shapes how I solve problems.</p></article>
+    <article class="lens reveal"><b>02</b><h3>Cloud</h3><p>Comfortable in AWS environments, from Amplify to EC2.</p></article>
+    <article class="lens reveal"><b>03</b><h3>Cinema</h3><p>Digital media and short film production with a story-first mindset.</p></article>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Arun Kumar V. Deployed globally via AWS Amplify.</p>
-    </footer>
+<section class="sec" id="skills">
+  <div class="wrap"><h2 class="reveal">Tech superpowers</h2></div>
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span><span>AWS Amplify</span><span>EC2</span><span>Git</span><span>VS Code</span>
+      <span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span><span>AWS Amplify</span><span>EC2</span><span>Git</span><span>VS Code</span>
+    </div>
+  </div>
+  <ul class="wrap badges reveal" aria-label="Skills">
+    <li>C</li><li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li><li>AWS Amplify</li><li>EC2</li><li>Git</li><li>VS Code</li>
+  </ul>
+</section>
 
-    <script src="script.js"></script>
+<section class="sec" id="work">
+  <div class="wrap">
+    <h2 class="reveal">Projects &amp; achievements</h2>
+    <p class="lead reveal">Three frames from what I’ve made so far.</p>
+  </div>
+  <div class="strip">
+    <article class="frame reveal">
+      <small>Scene 1</small>
+      <h3>Cloud-hosted resume &amp; portfolio</h3>
+      <p>My resume and portfolio deployed on AWS, always online and easy to update.</p>
+      <ul><li>AWS Amplify &amp; EC2</li><li>Versioned with Git</li></ul>
+    </article>
+    <article class="frame reveal">
+      <small>Scene 2</small>
+      <h3>Short film &amp; digital media production</h3>
+      <p>Turning ideas into short films and polished content for digital platforms.</p>
+      <ul><li>Production &amp; storytelling</li><li>Content for online audiences</li></ul>
+    </article>
+    <article class="frame reveal">
+      <small>Scene 3</small>
+      <h3>ചിത്രലോക <span>cinema updates</span></h3>
+      <p>Regional cinema updates that keep Malayalam film audiences informed.</p>
+      <ul><li>Regional cinema coverage</li><li>Audience-focused publishing</li></ul>
+    </article>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <p class="slate">Open to internships &amp; collaborations</p>
+    <h2 class="reveal">Let’s make something worth watching.</h2>
+    <a class="mail" id="mail" href="mailto:arunkumarvannadil2007@gmail.com">arunkumarvannadil2007@gmail.com</a>
+    <div class="actions">
+      <a class="btn solid" href="mailto:arunkumarvannadil2007@gmail.com">Send an email</a>
+      <button class="btn ghost" id="copy" type="button">Copy address</button>
+    </div>
+    <p class="note" id="note" role="status" aria-live="polite"></p>
+  </div>
+</section>
+</main>
+
+<footer><span>© <span id="yr"></span> Arun Kumar V</span><span>Hosted on AWS</span></footer>
+<script src="script.js"></script>
 </body>
 </html>

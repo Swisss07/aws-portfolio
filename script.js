@@ -1,36 +1,31 @@
-const terminalInput = document.getElementById('terminalInput');
-const terminalOutput = document.getElementById('terminalOutput');
+(function(){
+  document.documentElement.classList.add('js');
+  document.getElementById('yr').textContent=new Date().getFullYear();
 
-const commands = {
-    help: "Available commands:\n- about: Learn about Arun\n- skills: View tech superpowers\n- projects: View featured work\n- contact: Get professional links\n- clear: Clear terminal screen",
-    about: "Arun Kumar V is an Integrated MCA student at Amrita Vishwa Vidyapeetham with a strong background in cloud tools and software development.",
-    skills: "Core Stack: C, C++, Java, Python, JavaScript, AWS Amplify, EC2, Git, VS Code.",
-    projects: "Featured: 1. Cloud-Hosted Resume/Portfolio on AWS. 2. Digital Media Production & Regional Cinema Hub.",
-    contact: "GitHub: github.com/Swisss07 | Hosting: AWS Amplify Global Edge"
-};
+  // Spotlight follows the pointer in the hero
+  var hero=document.getElementById('hero');
+  hero.addEventListener('pointermove',function(e){
+    var r=hero.getBoundingClientRect();
+    hero.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    hero.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
 
-terminalInput.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        const userInput = terminalInput.value.trim().toLowerCase();
-        let response = "";
+  // Reveal on scroll
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(list){
+      list.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+    },{threshold:.15});
+    els.forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
 
-        if (userInput === 'clear') {
-            terminalOutput.innerHTML = "Terminal cleared. Type <span class='highlight-cmd'>help</span> for commands.";
-            terminalInput.value = "";
-            return;
-        } else if (commands[userInput]) {
-            response = commands[userInput];
-        } else if (userInput === "") {
-            response = "";
-        } else {
-            response = `command not found: ${userInput}. Type 'help' for available commands.`;
-        }
-
-        // Append text to terminal
-        terminalOutput.innerHTML += `\n$ ${terminalInput.value}\n${response}`;
-        terminalInput.value = "";
-        
-        // Auto scroll to bottom
-        terminalOutput.scrollTop = terminalOutput.scrollHeight;
-    }
-});
+  // Copy email
+  var note=document.getElementById('note'),addr='arunkumarvannadil2007@gmail.com';
+  document.getElementById('copy').addEventListener('click',function(){
+    function done(ok){note.textContent=ok?'Email address copied.':'Copy failed. Select the address above instead.'}
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(addr).then(function(){done(true)},function(){done(false)})}
+      else{var t=document.createElement('textarea');t.value=addr;document.body.appendChild(t);t.select();var ok=document.execCommand('copy');document.body.removeChild(t);done(ok)}
+    }catch(e){done(false)}
+  });
+})();
