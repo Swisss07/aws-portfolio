@@ -3,53 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arun Kumar V - Portfolio</title>
+    <title>Arun Kumar V - Cloud Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-glow"></div>
+    
     <header>
-        <h1>Arun Kumar V</h1>
-        <p>Integrated MCA Student & Developer</p>
-        <!-- Creative Feature Hint & Toggle Button -->
-        <div class="creative-container">
-            <span class="hint">👉 Try clicking the button below for a surprise!</span>
-            <button id="themeToggleBtn">Toggle Retro Terminal Theme</button>
+        <div class="hero-content">
+            <h1>Arun Kumar V</h1>
+            <p class="subtitle">Integrated MCA Student | Cloud & Full-Stack Developer</p>
+            
+            <!-- Creative Feature: Interactive Terminal CLI -->
+            <div class="creative-feature-box">
+                <span class="hint">⚡ Creative Feature: Try typing commands below (e.g., <code>skills</code>, <code>projects</code>, <code>clear</code>)</span>
+                
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">arun@aws-cloud:~</span>
+                    </div>
+                    <div id="terminal-output" class="terminal-output">
+                        Welcome to Arun's interactive CLI! Type <span class="highlight-cmd">help</span> to see available commands.
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="prompt">$</span>
+                        <input type="text" id="terminalInput" placeholder="Type a command here..." autocomplete="off">
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Section 1: About Me -->
-        <section id="about">
+        <section id="about" class="glass-card">
             <h2>About Me</h2>
-            <p>Hi! I'm Arun Kumar V, an Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus. I have a strong science background and a deep passion for software development, cloud technologies, and digital media production.</p>
+            <p>Hi! I'm Arun Kumar V, an Integrated MCA student at Amrita Vishwa Vidyapeetham, Mysuru Campus. I combine a strong science background with hands-on expertise in cloud environments, web deployment, and digital media production.</p>
         </section>
 
-        <!-- Section 2: Skills / Tech Superpowers -->
-        <section id="skills">
+        <!-- Section 2: Tech Superpowers -->
+        <section id="skills" class="glass-card">
             <h2>Tech Superpowers</h2>
-            <ul>
-                <li><strong>Languages:</strong> C, C++, Java, Python, JavaScript, HTML/CSS</li>
-                <li><strong>Tools:</strong> VS Code, Git, GitHub, Jupyter Notebook, AWS</li>
-                <li><strong>Development:</strong> Web Development, Cloud Environments (AWS EC2)</li>
-            </ul>
+            <div class="skills-grid">
+                <div class="skill-badge">C / C++</div>
+                <div class="skill-badge">Java</div>
+                <div class="skill-badge">Python</div>
+                <div class="skill-badge">JavaScript</div>
+                <div class="skill-badge">AWS EC2 & Amplify</div>
+                <div class="skill-badge">VS Code & Git</div>
+                <div class="skill-badge">Web & Cloud Architecture</div>
+            </div>
         </section>
 
         <!-- Section 3: Projects & Achievements -->
-        <section id="projects">
+        <section id="projects" class="glass-card">
             <h2>Projects & Achievements</h2>
             <div class="project-card">
                 <h3>Cloud-Hosted Resume & Portfolio</h3>
-                <p>Designed and deployed a responsive resume and portfolio website hosted globally on AWS using AWS Amplify Hosting and Nginx/Apache configurations.</p>
+                <p>Designed and deployed a responsive resume and portfolio website hosted globally on AWS using AWS Amplify Hosting, coupled with Nginx/Apache configurations.</p>
             </div>
             <div class="project-card">
-                <h3>Short Film & Digital Media Production</h3>
-                <p>Active creator and administrator for regional cinema updates (ചിത്രലോക) and participant in filmmaking challenges.</p>
+                <h3>Digital Media & Short Film Production</h3>
+                <p>Active creator and administrator for regional cinema updates (ചിത്രലോക), combining technical development with creative storytelling.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Arun Kumar V. Built for the AWS Student Builder Challenge.</p>
+        <p>&copy; 2026 Arun Kumar V. Deployed globally via AWS Amplify.</p>
     </footer>
 
     <script src="script.js"></script>
